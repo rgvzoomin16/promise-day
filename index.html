@@ -17,12 +17,13 @@
 
     <header class="floating-nav glass">
       <span>Promise Day • Vinni</span>
-      <button id="music-toggle" class="chip">🎵 Start Peaceful BGM</button>
+      <button id="music-toggle" class="chip" aria-describedby="bgm-hint">🎵 Start Peaceful BGM</button>
+      <span id="bgm-hint" class="bgm-hint">Tap background to change music mood + sparkles.</span>
     </header>
 
     <main>
       <section class="panel hero active-panel" id="page-1">
-        <span class="dynamic-emoji" aria-hidden="true">💖</span>
+        <span class="dynamic-emoji" data-emoji-set="💖,💘,💕,💞" aria-hidden="true">💖</span>
         <div class="bento bento-hero glass">
           <p class="eyebrow">A Promise Day Surprise</p>
           <h1>
@@ -35,7 +36,7 @@
       </section>
 
       <section class="panel" id="page-2">
-        <span class="dynamic-emoji" aria-hidden="true">🌹</span>
+        <span class="dynamic-emoji" data-emoji-set="🌹,🌺,🥀,💐" aria-hidden="true">🌹</span>
         <div class="bento two-col">
           <article class="glass card lift">
             <h2>The First Promise</h2>
@@ -50,7 +51,7 @@
       </section>
 
       <section class="panel" id="page-3">
-        <span class="dynamic-emoji" aria-hidden="true">✨</span>
+        <span class="dynamic-emoji" data-emoji-set="✨,🌟,💫,⚡" aria-hidden="true">✨</span>
         <div class="bento glass center">
           <h2>Emoji Bloom Surprise</h2>
           <p>Because loving you is chaos… the beautiful kind.</p>
@@ -60,7 +61,7 @@
       </section>
 
       <section class="panel" id="page-4">
-        <span class="dynamic-emoji" aria-hidden="true">💌</span>
+        <span class="dynamic-emoji" data-emoji-set="💌,📨,🫶,💟" aria-hidden="true">💌</span>
         <div class="bento glass">
           <h2>Love Quiz 💌</h2>
           <form id="love-quiz" class="quiz-grid">
@@ -95,7 +96,7 @@
       </section>
 
       <section class="panel" id="page-5">
-        <span class="dynamic-emoji" aria-hidden="true">🌙</span>
+        <span class="dynamic-emoji" data-emoji-set="🌙,⭐,🌌,☁️" aria-hidden="true">🌙</span>
         <div class="bento memory-lane glass">
           <h2>Memory Lane 🌙</h2>
           <ul>
@@ -108,7 +109,7 @@
       </section>
 
       <section class="panel" id="page-6">
-        <span class="dynamic-emoji" aria-hidden="true">💫</span>
+        <span class="dynamic-emoji" data-emoji-set="💫,✨,🌟,🪄" aria-hidden="true">💫</span>
         <div class="bento glass center">
           <h2>Compliment Burst ✨</h2>
           <button id="burst-btn" class="chip">Trigger Burst</button>
@@ -117,7 +118,7 @@
       </section>
 
       <section class="panel" id="page-7">
-        <span class="dynamic-emoji" aria-hidden="true">😜</span>
+        <span class="dynamic-emoji" data-emoji-set="😜,😂,🤭,😆" aria-hidden="true">😜</span>
         <div class="bento two-col">
           <article class="glass card">
             <h2>The Funny Promise 😜</h2>
@@ -129,7 +130,7 @@
       </section>
 
       <section class="panel" id="page-8">
-        <span class="dynamic-emoji" aria-hidden="true">❤️‍🔥</span>
+        <span class="dynamic-emoji" data-emoji-set="❤️‍🔥,❤️,💓,💗" aria-hidden="true">❤️‍🔥</span>
         <div class="bento glass center deep-promise">
           <h2>Deep Forever Promise ❤️‍🔥</h2>
           <p>
@@ -141,7 +142,7 @@
       </section>
 
       <section class="panel" id="page-9">
-        <span class="dynamic-emoji" aria-hidden="true">🥺</span>
+        <span class="dynamic-emoji" data-emoji-set="🥺,🫣,🤍,💖" aria-hidden="true">🥺</span>
         <div class="bento glass center">
           <h2>Interactive Heart Moment 💖</h2>
           <button id="hold-heart" class="heart-btn" aria-describedby="heart-msg">💖 Hold this heart</button>
@@ -150,7 +151,7 @@
       </section>
 
       <section class="panel finale" id="page-10">
-        <span class="dynamic-emoji" aria-hidden="true">🌸</span>
+        <span class="dynamic-emoji" data-emoji-set="🌸,🎆,🎇,💐" aria-hidden="true">🌸</span>
         <div class="bento glass center">
           <h2>Grand Finale 🌸</h2>
           <p>

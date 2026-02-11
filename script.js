@@ -17,6 +17,24 @@ const words = ['Beautiful', 'Dangerous', 'Mine', 'Magic', 'Home', 'Forever'];
 const emojiField = document.getElementById('emoji-field');
 const wordCloud = document.getElementById('word-cloud');
 
+const dynamicEmojis = document.querySelectorAll('.dynamic-emoji');
+
+function rotateSectionEmojis() {
+  dynamicEmojis.forEach((node) => {
+    const set = (node.dataset.emojiSet || node.textContent || '').split(',').map((item) => item.trim()).filter(Boolean);
+    if (!set.length) return;
+    const currentIndex = Math.max(set.indexOf(node.textContent.trim()), 0);
+    const next = set[(currentIndex + 1) % set.length];
+    node.textContent = next;
+    node.classList.remove('swap');
+    void node.offsetWidth;
+    node.classList.add('swap');
+  });
+}
+
+setInterval(rotateSectionEmojis, 2800);
+
+
 function bloom(container, list, className = 'float-emoji') {
   for (let i = 0; i < 16; i += 1) {
     const node = document.createElement('span');
@@ -219,6 +237,12 @@ musicToggle.addEventListener('click', () => {
 updateMusicLabel();
 
 document.addEventListener('pointerdown', (event) => {
+  const interactiveSelector = 'button, a, select, option, input, textarea, label';
+  const isInteractive = event.target.closest(interactiveSelector);
+  if (isInteractive) {
+    return;
+  }
+
   tapLoveSparks(event.clientX, event.clientY);
   cycleMusicMode();
 });

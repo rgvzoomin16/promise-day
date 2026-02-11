@@ -47,6 +47,13 @@ body {
   z-index: 20;
 }
 
+
+.bgm-hint {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-left: 12px;
+}
+
 .glass {
   backdrop-filter: blur(10px);
   background: var(--glass);
@@ -311,6 +318,23 @@ select {
   }
 }
 
+
+
+.dynamic-emoji.swap {
+  animation: emojiSwap 380ms ease;
+}
+
+@keyframes emojiSwap {
+  0% {
+    opacity: 0.1;
+    transform: translateY(8px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @keyframes floatUp {
   0% {
     opacity: 0;
@@ -349,6 +373,10 @@ select {
 
   .floating-nav {
     font-size: 0.84rem;
+  }
+
+  .bgm-hint {
+    display: none;
   }
 
   .dynamic-emoji {
