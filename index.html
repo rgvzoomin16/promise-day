@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Day for Vinni 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="spark-canvas" aria-hidden="true"></canvas>
+
+    <header class="floating-nav glass">
+      <span>Promise Day • Vinni</span>
+      <button id="music-toggle" class="chip">🎵 Start Magic</button>
+    </header>
+
+    <main>
+      <section class="panel hero active-panel" id="page-1">
+        <div class="bento bento-hero glass">
+          <p class="eyebrow">A Promise Day Surprise</p>
+          <h1>
+            <span class="reveal-line">Some promises are spoken…</span>
+            <span class="reveal-line">Some are written…</span>
+            <span class="reveal-line">Mine are built into eternity.</span>
+          </h1>
+          <a class="cta" href="#page-2">Enter My Promises</a>
+        </div>
+      </section>
+
+      <section class="panel" id="page-2">
+        <div class="bento two-col">
+          <article class="glass card lift">
+            <h2>The First Promise</h2>
+            <p>"I promise to choose you, even on my worst days."</p>
+          </article>
+          <article class="glass card hearts-wrap">
+            <div class="heart">💖</div>
+            <div class="heart">❤️‍🔥</div>
+            <div class="heart">🥺</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="page-3">
+        <div class="bento glass center">
+          <h2>Emoji Bloom Surprise</h2>
+          <p>Because loving you is chaos… the beautiful kind.</p>
+          <button id="emoji-bloom" class="chip">Bloom Emojis ✨</button>
+          <div id="emoji-field" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="page-4">
+        <div class="bento glass">
+          <h2>Love Quiz 💌</h2>
+          <form id="love-quiz" class="quiz-grid">
+            <label>Who is the drama queen? 😆
+              <select name="q1" required>
+                <option value="">Pick one</option>
+                <option>You</option>
+                <option>Me</option>
+                <option>Both of us</option>
+              </select>
+            </label>
+            <label>Who fell harder? 💖
+              <select name="q2" required>
+                <option value="">Pick one</option>
+                <option>You</option>
+                <option>Me</option>
+                <option>Simultaneous impact</option>
+              </select>
+            </label>
+            <label>Who says “nothing” when something is wrong? 🥺
+              <select name="q3" required>
+                <option value="">Pick one</option>
+                <option>You</option>
+                <option>Me</option>
+                <option>Guilty: both</option>
+              </select>
+            </label>
+            <button class="chip" type="submit">Reveal Result</button>
+            <p id="quiz-result"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="panel" id="page-5">
+        <div class="bento memory-lane glass">
+          <h2>Memory Lane 🌙</h2>
+          <ul>
+            <li>Late night talks...</li>
+            <li>Random fights...</li>
+            <li>Endless “goodnight” that never ended...</li>
+            <li>Soft apologies and louder laughter.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel" id="page-6">
+        <div class="bento glass center">
+          <h2>Compliment Burst ✨</h2>
+          <button id="burst-btn" class="chip">Trigger Burst</button>
+          <div id="word-cloud" class="word-cloud"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="page-7">
+        <div class="bento two-col">
+          <article class="glass card">
+            <h2>The Funny Promise 😜</h2>
+            <p>"I promise to annoy you for the rest of my life."</p>
+            <p class="mini">And still make you laugh before bed.</p>
+          </article>
+          <article class="glass card laughing">😂 🤭 💫 🌸 ✨</article>
+        </div>
+      </section>
+
+      <section class="panel" id="page-8">
+        <div class="bento glass center deep-promise">
+          <h2>Deep Forever Promise ❤️‍🔥</h2>
+          <p>
+            Even if the world changes,<br />
+            Even if time forgets us,<br />
+            My heart will still search for you.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel" id="page-9">
+        <div class="bento glass center">
+          <h2>Interactive Heart Moment 💖</h2>
+          <button id="hold-heart" class="heart-btn" aria-describedby="heart-msg">💖 Hold this heart</button>
+          <p id="heart-msg">Press and hold for 1.5 seconds...</p>
+        </div>
+      </section>
+
+      <section class="panel finale" id="page-10">
+        <div class="bento glass center">
+          <h2>Grand Finale 🌸</h2>
+          <p>
+            My only lifetime promise:<br />
+            You.<br />
+            Always you.<br />
+            Only you, Vinni.
+          </p>
+          <button id="fireworks" class="chip">Unleash Sparkle Storm</button>
+          <div id="storm" class="storm"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
